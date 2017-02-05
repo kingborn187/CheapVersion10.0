@@ -13,7 +13,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hallelujah Demo.ttf">
+        <array key="Hallelujah Demo.otf">
             <string>Hallelujah</string>
         </array>
         <array key="Soft Marshmallow.otf">
@@ -2135,7 +2135,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edC-xO-aeF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="kJa-Lf-IwS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="kJa-Lf-IwS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2262,7 +2262,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UAK-G6-95q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Add Event" image="iconaEventi" selectedImage="iconaEventi" id="tED-at-ifv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" id="TgV-dp-w7q">
+                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="TgV-dp-w7q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.3104933647260274" colorSpace="calibratedWhite"/>
@@ -2286,7 +2286,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PQT-B0-PKn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Events" image="iconaMy" id="i6h-Ro-xdt"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xKb-Gh-672">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xKb-Gh-672">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2715,14 +2715,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="37.5" y="24" width="300" height="32.5"/>
+                                <rect key="frame" x="38" y="24" width="300" height="33"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.68633204699999995" green="0.52893584969999996" blue="0.065718807279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-M0-Nai">
-                                <rect key="frame" x="16" y="20" width="343" height="40.5"/>
+                                <rect key="frame" x="16" y="20" width="343" height="41"/>
                                 <color key="backgroundColor" red="0.33525532479999998" green="0.75321137910000002" blue="0.98228543999999995" alpha="0.30597174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR code is detected !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-E3-vAj">

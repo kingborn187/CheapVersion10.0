@@ -2136,7 +2136,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edC-xO-aeF" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="kJa-Lf-IwS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="kJa-Lf-IwS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2240,7 +2240,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mte-2R-bAt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="iconaProfilo" selectedImage="iconaProfilo" id="Pog-aY-uHp"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYb-Ko-I8u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gYb-Ko-I8u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.65059685710000004" green="0.070319794120000001" blue="0.054190158840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2411,11 +2411,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="start game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBT-Dc-kuq">
-                                <rect key="frame" x="106" y="290" width="184" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoBlu" translatesAutoresizingMaskIntoConstraints="NO" id="vmQ-bF-zvG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GET READY..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-Jg-UFM">
+                                <rect key="frame" x="109" y="125" width="163" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n5X-bY-qvI">
+                                <rect key="frame" x="127" y="382" width="112" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile 3" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-uE-N1e">
+                                <rect key="frame" x="109" y="185" width="148" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X2-py-WPd">
+                                <rect key="frame" x="23" y="412" width="359" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Il gioco consiste nella ricerca di 6 qr code, l'utente deve trovali per sbloccare progressivamente le altre immagini facendo attenzione a scansionare il qr code giusto aiutandosi con dei suggerimenti </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Starting QR Code Hunting!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBT-Dc-kuq">
+                                <rect key="frame" x="55" y="64" width="264" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -2721,7 +2751,7 @@
                                 <color key="backgroundColor" red="0.33525532479999998" green="0.75321137910000002" blue="0.98228543999999995" alpha="0.30597174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="31" y="24" width="313.5" height="36"/>
+                                <rect key="frame" x="38" y="68" width="300" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2763,7 +2793,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sCU-KV-xzi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPa-VG-HwO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PPa-VG-HwO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3089,15 +3119,16 @@
         <image name="sfondoRosso" width="1404" height="2160"/>
         <image name="sfondorossoblu" width="1404" height="2160"/>
         <image name="smile" width="256" height="256"/>
+        <image name="smile 3" width="256" height="256"/>
         <image name="smile2" width="256" height="256"/>
         <image name="spuntaOk" width="128" height="128"/>
         <image name="trophy" width="256" height="256"/>
         <image name="worldwide" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="waM-pF-cHY"/>
-        <segue reference="zhK-FP-M12"/>
         <segue reference="gsv-hs-Wnw"/>
+        <segue reference="waM-pF-cHY"/>
+        <segue reference="VGj-U4-GbB"/>
         <segue reference="r2X-zA-SZ0"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

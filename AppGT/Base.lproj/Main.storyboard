@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sCU-KV-xzi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sCU-KV-xzi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hallelujah Demo.ttf">
+        <array key="Hallelujah Demo.otf">
             <string>Hallelujah</string>
         </array>
         <array key="Soft Marshmallow.otf">
@@ -2239,7 +2239,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mte-2R-bAt" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="iconaProfilo" selectedImage="iconaProfilo" id="Pog-aY-uHp"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gYb-Ko-I8u">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gYb-Ko-I8u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.65059685710000004" green="0.070319794120000001" blue="0.054190158840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -2262,7 +2262,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UAK-G6-95q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Add Event" image="iconaEventi" selectedImage="iconaEventi" id="tED-at-ifv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="TgV-dp-w7q">
+                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" id="TgV-dp-w7q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.3104933647260274" colorSpace="calibratedWhite"/>
@@ -2455,7 +2455,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VjZ-2A-cYE" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="iconaProfilo" id="x3N-XY-5f3"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="OkO-7z-aId">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OkO-7z-aId">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2715,7 +2715,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="38" y="68" width="300" height="32.5"/>
+                                <rect key="frame" x="38.5" y="68" width="300" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2967,7 +2967,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="trophy" translatesAutoresizingMaskIntoConstraints="NO" id="0pL-hf-ugB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile2" translatesAutoresizingMaskIntoConstraints="NO" id="0pL-hf-ugB">
                                 <rect key="frame" x="123" y="214" width="129" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3068,6 +3068,7 @@
         <image name="sfondoRosso" width="1404" height="2160"/>
         <image name="sfondorossoblu" width="1404" height="2160"/>
         <image name="smile" width="256" height="256"/>
+        <image name="smile2" width="256" height="256"/>
         <image name="spuntaOk" width="128" height="128"/>
         <image name="trophy" width="256" height="256"/>
         <image name="worldwide" width="256" height="256"/>

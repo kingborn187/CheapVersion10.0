@@ -17,6 +17,9 @@ class ProfiloUserView: UIViewController {
     @IBOutlet weak var sesso: UILabel!
     @IBOutlet weak var email: UILabel!
     @IBOutlet var imgProfilo: UIImageView!
+    @IBOutlet weak var riquadro1: UIImageView!
+    @IBOutlet weak var riquadro2: UIImageView!
+    @IBOutlet weak var riquadro3: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +35,21 @@ class ProfiloUserView: UIViewController {
         
         imgProfilo.layer.cornerRadius = self.imgProfilo.frame.size.width / 2
         imgProfilo.clipsToBounds = true
+        
+        riquadro1.layer.cornerRadius = 15
+        riquadro1.layer.masksToBounds = true
+        riquadro1.layer.borderWidth = 2.0
+        riquadro1.layer.borderColor = UIColor(hue: 0.7222, saturation: 0, brightness: 1, alpha: 0.25).cgColor
+        
+        riquadro2.layer.cornerRadius = 15
+        riquadro2.layer.masksToBounds = true
+        riquadro2.layer.borderWidth = 2.0
+        riquadro2.layer.borderColor = UIColor(hue: 0.7222, saturation: 0, brightness: 1, alpha: 0.25).cgColor
+        
+        riquadro3.layer.cornerRadius = 15
+        riquadro3.layer.masksToBounds = true
+        riquadro3.layer.borderWidth = 2.0
+        riquadro3.layer.borderColor = UIColor(hue: 0.7222, saturation: 0, brightness: 1, alpha: 0.25).cgColor
     }
 
     override func didReceiveMemoryWarning() {

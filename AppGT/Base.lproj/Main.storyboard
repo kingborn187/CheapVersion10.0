@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sCU-KV-xzi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sCU-KV-xzi">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Hallelujah Demo.otf">
+        <array key="Hallelujah Demo.ttf">
             <string>Hallelujah</string>
         </array>
         <array key="Soft Marshmallow.otf">
@@ -2715,14 +2715,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="38" y="24" width="300" height="33"/>
+                                <rect key="frame" x="38.5" y="68" width="300" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.68633204699999995" green="0.52893584969999996" blue="0.065718807279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-M0-Nai">
-                                <rect key="frame" x="16" y="20" width="343" height="41"/>
+                                <rect key="frame" x="16" y="64" width="343" height="40.5"/>
                                 <color key="backgroundColor" red="0.33525532479999998" green="0.75321137910000002" blue="0.98228543999999995" alpha="0.30597174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No QR code is detected !" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8Q-E3-vAj">
@@ -2769,6 +2769,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PPa-VG-HwO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.20197385549999999" green="0.54241353270000003" blue="0.85384410619999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -2843,7 +2848,7 @@
                                 <color key="highlightedColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="shadowColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lose" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-Br-ezo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-Br-ezo">
                                 <rect key="frame" x="123" y="214" width="129" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -2913,7 +2918,7 @@
                                 <color key="highlightedColor" red="0.68633204699999995" green="0.52893584969999996" blue="0.065718807279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="shadowColor" red="0.68633204699999995" green="0.52893584969999996" blue="0.065718807279999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lose" translatesAutoresizingMaskIntoConstraints="NO" id="2YM-Cr-2VE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile" translatesAutoresizingMaskIntoConstraints="NO" id="2YM-Cr-2VE">
                                 <rect key="frame" x="123" y="214" width="129" height="129"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -3050,7 +3055,6 @@
         <image name="iconaMypref" width="32" height="32"/>
         <image name="iconaProfilo" width="32" height="32"/>
         <image name="life" width="256" height="256"/>
-        <image name="lose" width="16" height="16"/>
         <image name="medal" width="256" height="256"/>
         <image name="puntoInt" width="256" height="256"/>
         <image name="quiz" width="256" height="256"/>
@@ -3063,15 +3067,16 @@
         <image name="sfondoBluSfocato" width="1404" height="2160"/>
         <image name="sfondoRosso" width="1404" height="2160"/>
         <image name="sfondorossoblu" width="1404" height="2160"/>
+        <image name="smile" width="256" height="256"/>
         <image name="spuntaOk" width="128" height="128"/>
         <image name="trophy" width="256" height="256"/>
         <image name="worldwide" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="r2X-zA-SZ0"/>
         <segue reference="gsv-hs-Wnw"/>
+        <segue reference="r2X-zA-SZ0"/>
         <segue reference="waM-pF-cHY"/>
-        <segue reference="zhK-FP-M12"/>
+        <segue reference="VGj-U4-GbB"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
 </document>

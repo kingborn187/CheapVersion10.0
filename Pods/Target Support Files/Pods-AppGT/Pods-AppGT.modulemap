@@ -1,0 +1,6 @@
+framework module Pods_AppGT {
+  umbrella header "Pods-AppGT-umbrella.h"
+
+  export *
+  module * { export * }
+}

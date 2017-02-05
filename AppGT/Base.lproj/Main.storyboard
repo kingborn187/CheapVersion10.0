@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3n5-bs-Cdx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="edC-xO-aeF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -32,7 +32,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondorossoblu" translatesAutoresizingMaskIntoConstraints="NO" id="lxV-xE-Xor">
@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-rp-lHu">
-                                <rect key="frame" x="3" y="787" width="369" height="30"/>
+                                <rect key="frame" x="64.5" y="503" width="246" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert user/company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z0g-no-bXp">
-                                <rect key="frame" x="3" y="717" width="369" height="30"/>
+                                <rect key="frame" x="64.5" y="433" width="246" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -1273,7 +1273,7 @@
                         <viewControllerLayoutGuide type="bottom" id="f2K-cM-KUD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="d7c-Ua-SaD">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="951"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondorossoblu" translatesAutoresizingMaskIntoConstraints="NO" id="GUN-OV-3be">
@@ -1348,7 +1348,7 @@
                         <viewControllerLayoutGuide type="bottom" id="r2Y-sp-5Nb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="05F-k0-CYU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoRosso" translatesAutoresizingMaskIntoConstraints="NO" id="rJG-Nw-RO6">
@@ -1604,7 +1604,7 @@
                         <viewControllerLayoutGuide type="bottom" id="9r6-68-oGq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4WR-9D-Bs5">
-                        <rect key="frame" x="0.0" y="64" width="375" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoRosso" translatesAutoresizingMaskIntoConstraints="NO" id="lgO-pW-u6j">
@@ -1612,7 +1612,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-uU-97v">
-                                <rect key="frame" x="0.0" y="-113" width="375" height="800"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCY-wB-Pzi">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
@@ -1862,7 +1862,7 @@
                         <viewControllerLayoutGuide type="bottom" id="k8H-7u-kVm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="9pA-1m-f6v">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sfondoRosso" translatesAutoresizingMaskIntoConstraints="NO" id="Lbb-Cb-R0D">
@@ -2712,12 +2712,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-M0-Nai">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9KN-M0-Nai">
                                 <rect key="frame" x="16" y="64" width="343" height="40.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.33525532479999998" green="0.75321137910000002" blue="0.98228543999999995" alpha="0.30597174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="38" y="68" width="300" height="32.5"/>
+                                <rect key="frame" x="38" y="24" width="300" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>

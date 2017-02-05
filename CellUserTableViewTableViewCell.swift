@@ -24,7 +24,7 @@ class CellUserTableViewTableViewCell: UITableViewCell {
         imageEvent.layer.cornerRadius = 10
         imageEvent.clipsToBounds = true
         
-        BackgroundCardView.backgroundColor = UIColor(hue: 0, saturation: 0.87, brightness: 0.95, alpha: 0.45)
+        BackgroundCardView.backgroundColor = UIColor(hue: 0.6056, saturation: 0.65, brightness: 0.83, alpha: 0.45)
         contentView.backgroundColor = UIColor(red: 240/255.0, green: 240/255.0, blue: 240/255.0, alpha: 0.0)
         BackgroundCardView.layer.cornerRadius = 15.0
         BackgroundCardView.layer.masksToBounds = false

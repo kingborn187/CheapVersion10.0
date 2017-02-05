@@ -50,7 +50,7 @@ class TableMYEventUserView: UITableViewController {
             cell.imageEvent.layer.cornerRadius = 16
             cell.imageEvent.clipsToBounds = true
             
-            if (cell.dataEvent.text?.contains("04 Feb 07"))! {
+            if (cell.dataEvent.text?.contains("05 Feb 07"))! {
                 cell.startButton.setTitleColor(.green, for: .normal)
                 cell.startButton.isEnabled = true
             } else {

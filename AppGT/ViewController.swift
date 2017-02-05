@@ -170,9 +170,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cella", for: indexPath as IndexPath) as! CollectionViewCell
         
+        cell.scoreSfida.text = String(dati.getSfide(nomeSfida: nomeSfida).punteggio[indexPath.row])
         //impostiamo l'immagine e il testo della label con quelli precedentemente dichiarati nelle due variabili
         if dati.getSfide(nomeSfida: nomeSfida).trovata[indexPath.row] == true {
-            cell.immagineSfida.setImage(UIImage(named: dati.getSfide(nomeSfida: nomeSfida).immagini[indexPath.row]), for: .normal)
+            cell.immagineSfida.image = (UIImage(named: dati.getSfide(nomeSfida: nomeSfida).immagini[indexPath.row]))
             cell.isUserInteractionEnabled = true
             cell.scoreSfida.text = String(dati.getSfide(nomeSfida: nomeSfida).punteggio[indexPath.row])
             if dati.getSfide(nomeSfida: nomeSfida).indovinato[indexPath.row] == true {

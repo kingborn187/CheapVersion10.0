@@ -16,9 +16,11 @@ class DatiCompany{
     
     // da cambiare
     init() {
-        datiAzienda = ["Parthenope": ("wow", 0123456, "via acton 87", "informatica", 0, 3, "parthenope"),
-                       "Sony": ("wox", 01234336, "via Coli 11", "informatica", 1, 2, "sony"),
-                       "Amazon": ("wosw", 01233456, "via Giovanni 87", "informatica", 0, 1, "amazon")]
+        datiAzienda = ["Parthenope": ("ciao", 0123456, "via acton 87", "informatica", 0, 3, "parthenope"),
+                       "Sony": ("ciao", 01234336, "viale Colli aminei ", "informatica", 1, 2, "sony"),
+                       "Amazon": ("ciao", 01233456, "via Giovanni 87", "informatica", 0, 1, "amazon"),
+                       "auchan": ("ciao", 01233456, "via Medina", "informatica", 0, 1, "auchan"),
+                       "Carrefour": ("ciao", 01233456, "via Giovanni 87", "informatica", 0, 1, "carrefour")]
     }
     
     

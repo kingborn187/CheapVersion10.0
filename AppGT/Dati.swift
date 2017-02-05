@@ -57,6 +57,7 @@ class Dati {
         if datiSfida[nomeSfida]?.immagini[startPoint] == nameImg {
             print("qrcode n \(startPoint) trovata")
             datiSfida[nomeSfida]?.indovinato[startPoint] = true
+            datiSfida[nomeSfida]?.punteggio[startPoint] = ((datiSfida[nomeSfida]?.punteggio[startPoint])!+1) * 10
             startPoint = startPoint + 1
             datiSfida[nomeSfida]?.trovata[startPoint] = true
             return true

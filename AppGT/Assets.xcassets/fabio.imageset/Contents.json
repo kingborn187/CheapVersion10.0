@@ -2,17 +2,15 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Logo_g.jpg",
+      "filename" : "16559192_10210676170094328_166856074_n.jpg",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Logo_g-1.jpg",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Logo_g-2.jpg",
       "scale" : "3x"
     }
   ],

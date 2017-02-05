@@ -19,13 +19,13 @@ class DatiEvento {
     
     // Da cambiare
     init(){
-        self.datiEvento = ["Challenge Partenope": ("Napoli Via Francesco Petrarca", "12 Gen 07", "19:19", 24, 10, 30, UIImage(named: "parthenope")!, "10% di sconto al bar", "Image Recongnition"),
-                           "Challenge Sony": ("Via Giovanni 61", "04 Feb 07", "19:19", 24, 10, 30, UIImage(named: "sony")!, "10% di sconto sull'iphone 6", "Image Recongnition"),
-                           "Challenge Amazon": ("Via Santo 61", "13 Feb 07", "19:19", 24, 10, 30, UIImage(named: "amazon")!, "15% di sconto sui libri", "Image Recongnition")]
+        self.datiEvento = ["Challenge Partenope": ("Napoli Via Francesco Petrarca", "06 Feb 07", "19:19", 24, 10, 30, UIImage(named: "parthenopeEvent")!, "10% di sconto al bar", "Image Recongnition"),
+                           "Challenge Sony": ("Viale colli aminei", "05 Feb 07", "19:19", 24, 10, 30, UIImage(named: "sony")!, "10% di sconto sull'iphone 6", "Image Recongnition"),
+                           "Challenge Amazon": ("Via Santo 61", "06 Feb 07", "19:19", 24, 10, 30, UIImage(named: "amazon")!, "15% di sconto sui libri", "Image Recongnition")]
         
-        self.iscritti = ["Challenge Partenope": ["kingborn187", "kissKiss", "Arturo19"],
-                         "Challenge Sony": ["kingborn187", "kissKiss"],
-                         "Challenge Amazon": ["kingborn187"]]
+        self.iscritti = ["Challenge Partenope": ["Ren", "Gennaro", "Vincenzo", "Giuseppe"],
+                         "Challenge Sony": ["Fabio", "Gennaro"],
+                         "Challenge Amazon": ["Ren", "Vincenzo"]]
         
         self.eventi = ["Parthenope": ["Challenge Partenope"]]
         self.chiaviEvento = ["Challenge Partenope", "Challenge Sony", "Challenge Amazon"]

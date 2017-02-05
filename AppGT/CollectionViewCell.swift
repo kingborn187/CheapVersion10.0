@@ -12,7 +12,7 @@ class CollectionViewCell: UICollectionViewCell {
     
 
     @IBOutlet var scoreSfida: UILabel!
-    @IBOutlet var immagineSfida: UIButton!
+    @IBOutlet var immagineSfida: UIImageView!
     @IBOutlet var spuntaOk: UIImageView!
     
     

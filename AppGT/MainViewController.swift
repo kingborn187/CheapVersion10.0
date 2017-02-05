@@ -22,6 +22,8 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("ciao")
+        login = Login()
         // Bottone Login
         loginButton.layer.borderWidth = 1.0
         loginButton.layer.borderColor = UIColor(white: 1.0, alpha: 0.7).cgColor
@@ -29,11 +31,6 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
         userLogin?.delegate = self
         //password?.delegate = self
-        
-        
-        // Da cambiare User
-        userLogin.text = "kingborn187"
-        password.text = "ciao"
         
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)

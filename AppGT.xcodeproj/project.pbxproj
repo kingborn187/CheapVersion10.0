@@ -14,9 +14,9 @@
 		553281111E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5532810D1E41FF9500AEF70A /* Hallelujah Demo.ttf */; };
 		553281121E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5532810D1E41FF9500AEF70A /* Hallelujah Demo.ttf */; };
 		553281131E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5532810D1E41FF9500AEF70A /* Hallelujah Demo.ttf */; };
-		633AC1661E47982400D37285 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 633AC1651E47982400D37285 /* Soft Marshmallow.otf */; };
-		633AC1671E47982400D37285 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 633AC1651E47982400D37285 /* Soft Marshmallow.otf */; };
-		633AC1681E47982400D37285 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 633AC1651E47982400D37285 /* Soft Marshmallow.otf */; };
+		5597A09D1E479CA700809E88 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5597A09C1E479CA700809E88 /* Soft Marshmallow.otf */; };
+		5597A09E1E479CA700809E88 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5597A09C1E479CA700809E88 /* Soft Marshmallow.otf */; };
+		5597A09F1E479CA700809E88 /* Soft Marshmallow.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5597A09C1E479CA700809E88 /* Soft Marshmallow.otf */; };
 		636EE7081E439C8D00F35499 /* DettagliTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 636EE7071E439C8D00F35499 /* DettagliTable.swift */; };
 		B7220C121E3F81C4001CCD80 /* DatiCompany.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7220C111E3F81C4001CCD80 /* DatiCompany.swift */; };
 		D42E270A1E4768A00032B37A /* Dati.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42E27091E4768A00032B37A /* Dati.swift */; };
@@ -79,7 +79,7 @@
 /* Begin PBXFileReference section */
 		5532810C1E41FF9500AEF70A /* Hallelujah Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallelujah Demo.otf"; sourceTree = "<group>"; };
 		5532810D1E41FF9500AEF70A /* Hallelujah Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Hallelujah Demo.ttf"; sourceTree = "<group>"; };
-		633AC1651E47982400D37285 /* Soft Marshmallow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soft Marshmallow.otf"; sourceTree = "<group>"; };
+		5597A09C1E479CA700809E88 /* Soft Marshmallow.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Soft Marshmallow.otf"; sourceTree = "<group>"; };
 		636EE7071E439C8D00F35499 /* DettagliTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DettagliTable.swift; sourceTree = "<group>"; };
 		B7220C111E3F81C4001CCD80 /* DatiCompany.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatiCompany.swift; sourceTree = "<group>"; };
 		BECA1E417657519239518A8B /* Pods-AppGT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppGT.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppGT/Pods-AppGT.debug.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				5532810C1E41FF9500AEF70A /* Hallelujah Demo.otf */,
 				5532810D1E41FF9500AEF70A /* Hallelujah Demo.ttf */,
 				D42E27131E4768C50032B37A /* bernadette.ttf */,
-				633AC1651E47982400D37285 /* Soft Marshmallow.otf */,
+				5597A09C1E479CA700809E88 /* Soft Marshmallow.otf */,
 			);
 			name = fonts;
 			sourceTree = "<group>";
@@ -419,7 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553281111E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */,
-				633AC1661E47982400D37285 /* Soft Marshmallow.otf in Resources */,
+				5597A09D1E479CA700809E88 /* Soft Marshmallow.otf in Resources */,
 				F9F8E04A1E3F442D006C10AA /* LaunchScreen.storyboard in Resources */,
 				5532810E1E41FF9500AEF70A /* Hallelujah Demo.otf in Resources */,
 				F9F8E0471E3F442D006C10AA /* Assets.xcassets in Resources */,
@@ -432,7 +432,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633AC1671E47982400D37285 /* Soft Marshmallow.otf in Resources */,
+				5597A09E1E479CA700809E88 /* Soft Marshmallow.otf in Resources */,
 				553281121E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */,
 				5532810F1E41FF9500AEF70A /* Hallelujah Demo.otf in Resources */,
 			);
@@ -442,7 +442,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				633AC1681E47982400D37285 /* Soft Marshmallow.otf in Resources */,
+				5597A09F1E479CA700809E88 /* Soft Marshmallow.otf in Resources */,
 				553281131E41FF9500AEF70A /* Hallelujah Demo.ttf in Resources */,
 				553281101E41FF9500AEF70A /* Hallelujah Demo.otf in Resources */,
 			);

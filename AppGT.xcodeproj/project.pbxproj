@@ -371,7 +371,7 @@
 				TargetAttributes = {
 					F9F8E0381E3F442D006C10AA = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 9JXJ7663H6;
+						DevelopmentTeam = 93JF9LS6ZY;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
@@ -684,7 +684,7 @@
 			baseConfigurationReference = BECA1E417657519239518A8B /* Pods-AppGT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9JXJ7663H6;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = AppGT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -699,7 +699,7 @@
 			baseConfigurationReference = E04056FAB38D88E3B6936CF8 /* Pods-AppGT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9JXJ7663H6;
+				DEVELOPMENT_TEAM = 93JF9LS6ZY;
 				INFOPLIST_FILE = AppGT/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

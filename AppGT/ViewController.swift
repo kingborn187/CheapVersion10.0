@@ -51,7 +51,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         punti.text = String(dati.getPunteggio())
         print("ciao sono apparso")
         // Do any additional setup after loading the view.
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+//        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         
             
             if dati.gameover(nomeSfida: nomeSfida) {
@@ -98,6 +98,15 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 
             }
         }
+            
+            if dati.gameover(nomeSfida: nomeSfida) {
+                self.performSegue(withIdentifier: "noLife", sender: self)
+            } else
+                
+                if dati.startPoint == dati.getNumSfide(nomeSfida: nomeSfida) {
+                    self.performSegue(withIdentifier: "youWin", sender: self)
+            } else
+
             if vitaPersa == true {
                 let alertController = UIAlertController(title: "Scelta sbagliata", message: "Ti sono rimaste \(5-dati.numVitPerse) vite", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
@@ -108,7 +117,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 alertController.view.addSubview(imageView)
                 present(alertController, animated: true, completion: nil)
                 
-            }
+            } else
             
             if sfidaIndovinata == true {
                 let alertController = UIAlertController(title: "Scelta giusta", message: "Continua cosi' dai!", preferredStyle: UIAlertControllerStyle.alert)
@@ -121,11 +130,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 present(alertController, animated: true, completion: nil)
                 
             }
-            
-            if dati.gameover(nomeSfida: nomeSfida) {
-                self.performSegue(withIdentifier: "noLife", sender: self)
-            }
-
 
             
             
@@ -158,6 +162,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         //questo valore serve per far capire alla Collection View quante celle devono essere visualizzate
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         return dati.getNumSfide(nomeSfida: nomeSfida)
     }
     

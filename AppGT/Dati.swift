@@ -42,7 +42,7 @@ class Dati {
     }
     
     func getNumSfide(nomeSfida: String) -> Int {
-        return 6
+        return numSfide
     }
     
     func getSfide(nomeSfida: String) -> (immagini: [String] , indizii: [String], difficolta: [Int], punteggio: [Int], trovata: [Bool], indovinato: [Bool], vite: [Bool]) {

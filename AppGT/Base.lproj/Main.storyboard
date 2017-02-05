@@ -2261,7 +2261,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UAK-G6-95q" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Add Event" image="iconaEventi" selectedImage="iconaEventi" id="tED-at-ifv"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" id="TgV-dp-w7q">
+                    <navigationBar key="navigationBar" alpha="0.10000000000000001" contentMode="scaleToFill" misplaced="YES" id="TgV-dp-w7q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.3104933647260274" colorSpace="calibratedWhite"/>
@@ -2430,7 +2430,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6Za-nl-exJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Events" image="iconaMypref" id="ouj-Yr-XdY"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pmc-IT-YjU">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="pmc-IT-YjU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>

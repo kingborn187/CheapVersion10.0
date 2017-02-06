@@ -66,7 +66,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             performSegue(withIdentifier: choise, sender: self)
         }
         else {
-            let alertController = UIAlertController(title: "Error", message: "the username or the password you entered was incorrect", preferredStyle: UIAlertControllerStyle.alert)
+            let alertController = UIAlertController(title: "Error!", message: "The username or the password you entered was incorrect", preferredStyle: UIAlertControllerStyle.alert)
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
             present(alertController, animated: true, completion: nil)
         }

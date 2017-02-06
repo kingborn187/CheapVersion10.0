@@ -14,11 +14,11 @@ class DatiUser: NSObject {
     
     // DA CAMBIARE
     override init() {
-        dataUser = ["Ren":("Renato", "Tramontano", "ciao", "M", "08 Gen 1988", 1000, "kingborn187", "ren"),
-                    "Fabio":("Fabio", "Zè Matteis", "ciao", "M", "08 Fef 1988", 750, "assd", "fabio"),
-                    "Giuseppe":("Giuseppe", "Medina", "ciao", "M", "09 Gen 1988", 1000, "assasa", "giuseppe"),
-        "Gennaro":("Gennaro", "Mellone", "ciao", "M", "09 Gen 1988", 1000, "assasa", "gannaro"),
-        "Vincenzo":("Vincenzo", "Spatera", "ciao", "M", "09 Gen 1988", 1000, "assasa", "vincenzo")]
+        dataUser = ["Ren":("Renato", "Tramontano", "ciao", "M", "08 Gen 1988", 1000, "kingborn187@icloud.com", "ren"),
+                    "Fabio":("Fabio", "De Matteis", "ciao", "M", "08 Feb 1988", 750, "fabio@icloud.com", "fabio"),
+                    "Giuseppe":("Giuseppe", "Medina", "ciao", "M", "09 Gen 1988", 1000, "fabio@icloud.com", "giuseppe"),
+        "Gennaro":("Gennaro", "Mellone", "ciao", "M", "09 Gen 1988", 1000, "gennaro@icloud.com", "gannaro"),
+        "Vincenzo":("Vincenzo", "Spatera", "ciao", "M", "09 Gen 1988", 1000, "vincenzo@icloud.com", "vincenzo")]
     }
     
     init?(dati: [String : (String, String, String, String, String, Int, String, String)]) {

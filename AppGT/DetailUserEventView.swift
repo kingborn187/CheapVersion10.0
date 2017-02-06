@@ -86,7 +86,7 @@ class DetailUserEventView: UIViewController, MKMapViewDelegate, CLLocationManage
 
     @IBAction func confermEvent(_ sender: Any) {
         
-        let alertController = UIAlertController(title: "Sei sicuro di volerti iscrivere", message: "Seleziona una delle due opzioni", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "Are you sure you want to subscribe?", message: "Select one of two the options", preferredStyle: UIAlertControllerStyle.alert)
         
         alertController.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.default, handler:  {(action:UIAlertAction) in
             print("cancel")
@@ -94,6 +94,7 @@ class DetailUserEventView: UIViewController, MKMapViewDelegate, CLLocationManage
         
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler:  {(action:UIAlertAction) in
             login.iscrivitiAdEvento(nameEvent: self.nameEvent.text!)
+             self.performSegue(withIdentifier: "goMyEvents", sender: self)
         }));
    
         present(alertController, animated: true, completion: nil)

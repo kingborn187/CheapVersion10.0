@@ -17,13 +17,14 @@ class Dati {
     
     var startPoint = 0
     var numVitPerse = 0
-    var numSfide = 6
+    var numSfide = 4
     var punteggio = 0
+    var creaTempo = false
     
     init() {
         datiSfida = ["Challenge Parthenope":
-            (["appartamento", "cucina", "bagno", "porto", "spiaggia", "parco"],
-            ["Cerca vicino al letto1", "Cerca vicino al letto2", "Cerca vicino al letto3", "Cerca vicino al letto4", "Cerca vicino al letto5", "Cerca vicino al letto6"],
+            (["profumo", "chitarra", "cassettone", "astuccio"],
+             ["Find near the mirror", "Look for a six strings instrument", "It has got seven drawers.", "It contains pencils and pens"],
             [1, 2, 3, 4, 5, 6], [0, 0, 0, 0, 0, 0], [true, false, false, false, false, false], [false, false, false, false, false, false], [false, false, false, false, false])]
     }
     
@@ -57,7 +58,8 @@ class Dati {
         if datiSfida[nomeSfida]?.immagini[startPoint] == nameImg {
             print("qrcode n \(startPoint) trovata")
             datiSfida[nomeSfida]?.indovinato[startPoint] = true
-            datiSfida[nomeSfida]?.punteggio[startPoint] = ((datiSfida[nomeSfida]?.punteggio[startPoint])!+1) * 10
+            datiSfida[nomeSfida]?.punteggio[startPoint] = ((datiSfida[nomeSfida]?.punteggio[startPoint])!+1) * ((datiSfida[nomeSfida]?.difficolta[startPoint])!+1)
+            punteggio += ((datiSfida[nomeSfida]?.punteggio[startPoint]))!
             startPoint = startPoint + 1
             datiSfida[nomeSfida]?.trovata[startPoint] = true
             return true

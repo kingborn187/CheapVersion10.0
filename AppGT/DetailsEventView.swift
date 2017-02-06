@@ -19,6 +19,7 @@ class DetailsEventView: UIViewController, UITableViewDataSource, UITableViewDele
     var imageViewText = UIImage()
     var registerText = ""
     var deadlineText = ""
+    var nameEvent = ""
     
      private let datiUser = DatiUser()
     
@@ -38,7 +39,7 @@ class DetailsEventView: UIViewController, UITableViewDataSource, UITableViewDele
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datiUser.dataUser!.count
+        return (login.iscritti(nomeEvento: nameEvent)?.count)!
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -49,7 +50,7 @@ class DetailsEventView: UIViewController, UITableViewDataSource, UITableViewDele
         let cellIdentifier = "CellEmail"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CellEmailTableView
                 
-        cell.email.text = Array(datiUser.dataUser!.keys)[indexPath.row]
+        cell.email.text = login.iscritti(nomeEvento: nameEvent)?[indexPath.row]
     
 
         return cell

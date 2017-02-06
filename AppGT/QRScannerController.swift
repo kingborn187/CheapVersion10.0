@@ -117,7 +117,7 @@ class QRScannerController: UIViewController, AVCaptureMetadataOutputObjectsDeleg
             }
         }
         
-        let alertController = UIAlertController(title: "Sei sicuro di voler confermare?", message: "Seleziona una delle due opzioni", preferredStyle: UIAlertControllerStyle.alert)
+        let alertController = UIAlertController(title: "Are you sure you want to confirm?", message: "Select one of the two options", preferredStyle: UIAlertControllerStyle.alert)
         
         alertController.addAction(UIAlertAction(title: "CANCEL", style: UIAlertActionStyle.default, handler:  {(action:UIAlertAction) in
             print("cancel")

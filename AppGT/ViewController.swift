@@ -11,9 +11,9 @@ import UIKit
 var dati = Dati()
 
 var timer = Timer()
+
 var hours = 24
 var minutes = 60
-var seconds = 60
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
@@ -108,7 +108,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             } else
 
             if vitaPersa == true {
-                let alertController = UIAlertController(title: "Scelta sbagliata", message: "Ti sono rimaste \(5-dati.numVitPerse) vite", preferredStyle: UIAlertControllerStyle.alert)
+                let alertController = UIAlertController(title: "Wrong choice", message: "Now you have only \(5-dati.numVitPerse) lives!", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                     self.vitaPersa = false
                 }));
@@ -120,7 +120,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             } else
             
             if sfidaIndovinata == true {
-                let alertController = UIAlertController(title: "Scelta giusta", message: "Continua cosi' dai!", preferredStyle: UIAlertControllerStyle.alert)
+                let alertController = UIAlertController(title: "Right choice", message: "Keep going!", preferredStyle: UIAlertControllerStyle.alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                     self.sfidaIndovinata = false
                 }));
@@ -130,27 +130,19 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
                 present(alertController, animated: true, completion: nil)
                 
             }
-
             
             
     }
 
     func counter(){
-        seconds -= 1
-        self.countdown.text = String(hours).appending(" : ").appending(String(minutes)).appending(" : ").appending(String(seconds))
+        self.countdown.text = String(hours).appending(" : ").appending(String(minutes))
         
-        if(seconds == 0){
-            timer.invalidate()
-            seconds = 60
-            minutes -= 1
-            self.countdown.text = String(hours).appending(" : ").appending(String(minutes)).appending(" : ").appending(String(seconds))
-        }
         
         if(minutes == 0){
-            timer.invalidate()
+//            timer.invalidate()
             minutes = 60
             hours -= 1
-            self.countdown.text = String(hours).appending(" : ").appending(String(minutes)).appending(" : ").appending(String(seconds))
+            self.countdown.text = String(hours).appending(" : ").appending(String(minutes))
         }
 
     }
@@ -161,7 +153,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        //questo valore serve per far capire alla Collection View quante celle devono essere visualizzate
+//        questo valore serve per far capire alla Collection View quante celle devono essere visualizzate
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         return dati.getNumSfide(nomeSfida: nomeSfida)
     }
@@ -206,15 +198,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             destinationController.imageSfidaImg = dati.getSfide(nomeSfida: nomeSfida).immagini[(indexPath?.row)!]
             destinationController.indizioTxt = dati.getSfide(nomeSfida: nomeSfida).indizii[(indexPath?.row)!]
         }
-//        if segue.identifier == "showDettagli" {
-//            let destinationController = segue.destination as! DettagliViewController
-//            let cell = sender as! CollectionViewCell
-//            let indexPath = collectionView.indexPath(for: cell)
-//            destinationController.imageSfidaImg = dati.getSfide(nomeSfida: nomeSfida).immagini[(indexPath?.row)!]
-//            destinationController.indizioTxt = dati.getSfide(nomeSfida: nomeSfida).indizii[(indexPath?.row)!]
-//        } else if segue.identifier == "goHome" {
-//            print("ciao")
-//        }
     }
 
     

@@ -10,16 +10,12 @@ import UIKit
 
 class DettagliViewController: UIViewController {
 
-    @IBOutlet var countdown: UILabel!
     @IBOutlet var imageSfida: UIImageView!
     @IBOutlet var indizio: UILabel!
     @IBOutlet var qrButton: UIButton!
 
     @IBOutlet weak var ImageSfondoIndizio: UIImageView!
 
-
-    
-    var countdownTxt = ""
     var imageSfidaImg = ""
     var indizioTxt = ""
     
@@ -28,7 +24,6 @@ class DettagliViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        countdown.text = countdownTxt
         imageSfida.image = UIImage(named: imageSfidaImg)
         indizio.text = indizioTxt
         // Do any additional setup after loading the view.
@@ -41,9 +36,9 @@ class DettagliViewController: UIViewController {
         ImageSfondoIndizio.layer.masksToBounds = true
         ImageSfondoIndizio.layer.borderWidth = 2.0
         ImageSfondoIndizio.layer.borderColor = UIColor(hue: 0.7222, saturation: 0, brightness: 1, alpha: 0.25).cgColor
-                
         
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

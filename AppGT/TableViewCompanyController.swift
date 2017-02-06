@@ -57,7 +57,8 @@ class TableViewCompanyController: UITableViewController {
                     let destinationController = segue.destination as! DetailsEventView
                     destinationController.imageViewText = (login.datiEvent(nameEvent: events[indexPath.row])?.immaginiSfida)!
                     destinationController.registerText = String(login.iscritti(nomeEvento: events[indexPath.row])!.count)
-                    destinationController.deadlineText = (login.datiEvent(nameEvent: events[indexPath.row])?.luogo)!
+                    destinationController.deadlineText = (login.datiEvent(nameEvent: events[indexPath.row])?.data)!
+                    destinationController.nameEvent = events[indexPath.row]
                 }
             }
         }

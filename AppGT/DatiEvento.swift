@@ -19,16 +19,16 @@ class DatiEvento {
     
     // Da cambiare
     init(){
-        self.datiEvento = ["Challenge Partenope": ("Napoli Via Francesco Petrarca", "06 Feb 07", "19:19", 24, 10, 30, UIImage(named: "parthenopeEvent")!, "10% di sconto al bar", "Image Recongnition"),
-                           "Challenge Sony": ("Viale colli aminei", "05 Feb 07", "19:19", 24, 10, 30, UIImage(named: "sony")!, "10% di sconto sull'iphone 6", "Image Recongnition"),
-                           "Challenge Amazon": ("Via Santo 61", "06 Feb 07", "19:19", 24, 10, 30, UIImage(named: "amazon")!, "15% di sconto sui libri", "Image Recongnition")]
+        self.datiEvento = ["Challenge Parthenope": ("Napoli Via Francesco Petrarca", "06 Feb 07", "08:00", 24, 10, 30, UIImage(named: "parthenopeEvent")!, "10% off at the Uni Cafe", "QR Hunting"),
+                           "Challenge Sony": ("Viale colli aminei", "05 Feb 07", "10:30", 24, 10, 30, UIImage(named: "sony")!, "10% off on an iPhone 6", "QR Hunting"),
+                           "Challenge Amazon": ("Via Santo 61", "06 Feb 07", "09:15", 24, 10, 30, UIImage(named: "amazon")!, "15% off on books", "QR Hunting")]
         
-        self.iscritti = ["Challenge Partenope": ["Ren", "Gennaro", "Vincenzo", "Giuseppe"],
+        self.iscritti = ["Challenge Parthenope": ["Ren", "Gennaro", "Vincenzo", "Giuseppe"],
                          "Challenge Sony": ["Fabio", "Gennaro"],
                          "Challenge Amazon": ["Ren", "Vincenzo"]]
         
-        self.eventi = ["Parthenope": ["Challenge Partenope"]]
-        self.chiaviEvento = ["Challenge Partenope", "Challenge Sony", "Challenge Amazon"]
+        self.eventi = ["Parthenope": ["Challenge Parthenope"]]
+        self.chiaviEvento = ["Challenge Parthenope", "Challenge Sony", "Challenge Amazon"]
     }
     
     func getTot() -> Int {

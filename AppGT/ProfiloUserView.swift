@@ -12,7 +12,6 @@ class ProfiloUserView: UIViewController {
     @IBOutlet weak var punti: UILabel!
     @IBOutlet weak var nome: UILabel!
     @IBOutlet weak var cognome: UILabel!
-    @IBOutlet weak var citta: UILabel!
     @IBOutlet weak var eta: UILabel!
     @IBOutlet weak var sesso: UILabel!
     @IBOutlet weak var email: UILabel!
@@ -24,10 +23,9 @@ class ProfiloUserView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        punti.text = String(describing: login.datiProfiloUser()?.scorePoints)
+        punti.text = String(describing: (login.datiProfiloUser()?.scorePoints)!)
         nome.text = login.datiProfiloUser()?.nome
         cognome.text = login.datiProfiloUser()?.cognome
-        citta.text = "UNKNOW"
         eta.text = login.datiProfiloUser()?.data
         sesso.text = login.datiProfiloUser()?.sesso
         email.text = login.datiProfiloUser()?.email

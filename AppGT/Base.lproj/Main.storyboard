@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wxs-rp-lHu">
-                                <rect key="frame" x="64.5" y="503" width="246" height="30"/>
+                                <rect key="frame" x="65" y="503" width="246" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -107,7 +107,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="insert user/company" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z0g-no-bXp">
-                                <rect key="frame" x="64.5" y="433" width="246" height="30"/>
+                                <rect key="frame" x="65" y="433" width="246" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -174,8 +174,8 @@
                                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="insertPhoto2:" destination="bcc-Ld-Bd8" eventType="touchUpInside" id="bSZ-2i-iWA"/>
                                                     <action selector="open:" destination="VxO-85-jdk" eventType="touchUpInside" id="cjg-9e-76m"/>
+                                                    <action selector="photoFromLibrary:" destination="bcc-Ld-Bd8" eventType="touchUpInside" id="SaP-rG-sf4"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxj-RA-387">
@@ -329,6 +329,10 @@
                                                 <color key="textColor" red="0.99194461107254028" green="0.99615627527236938" blue="0.99600595235824585" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCJ-Uc-trs">
+                                                <rect key="frame" x="64" y="76" width="247" height="164"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="uha-jX-nf2" firstAttribute="baseline" secondItem="DOl-rf-kAp" secondAttribute="firstBaseline" id="1dL-NW-OoM"/>
@@ -406,6 +410,9 @@
                         <outlet property="buttonOk" destination="CfK-ix-V5R" id="y58-U8-qLn"/>
                         <outlet property="date" destination="4Ln-0n-azE" id="KWb-O5-Mvt"/>
                         <outlet property="email" destination="Kx4-TJ-DoF" id="mw8-j6-NRI"/>
+                        <outlet property="imageReal" destination="vCJ-Uc-trs" id="rMa-K9-GWD"/>
+                        <outlet property="imageUser" destination="nu4-vA-uQq" id="g7M-4i-jHJ"/>
+                        <outlet property="labelAdd" destination="gGW-gs-uKN" id="rzl-Q5-8GP"/>
                         <outlet property="name" destination="vVW-EK-cQp" id="CDs-oz-tub"/>
                         <outlet property="nameUser" destination="yFm-vg-0p4" id="D1D-xI-rWd"/>
                         <outlet property="password" destination="xE0-VL-nSO" id="C63-NY-jn7"/>
@@ -2197,7 +2204,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DRW-xq-Ms5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="My Events" image="iconaMy" selectedImage="iconaMy" id="o9x-U3-jPW"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Zrd-NI-Zde">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zrd-NI-Zde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2753,7 +2760,7 @@
                                 <color key="backgroundColor" red="0.33525532479999998" green="0.75321137910000002" blue="0.98228543999999995" alpha="0.30597174659999998" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the right QR-Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yKZ-Ga-A8E">
-                                <rect key="frame" x="38" y="68" width="300" height="32.5"/>
+                                <rect key="frame" x="38.5" y="24" width="300" height="32.5"/>
                                 <fontDescription key="fontDescription" name="SoftMarshmallow" family="Soft Marshmallow" pointSize="30"/>
                                 <color key="textColor" red="1" green="0.82063454390000001" blue="0.28632527590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -2795,7 +2802,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sCU-KV-xzi" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="PPa-VG-HwO">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PPa-VG-HwO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="0.60000002379999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

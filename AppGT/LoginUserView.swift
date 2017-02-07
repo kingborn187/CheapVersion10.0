@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class LoginUserView: UIViewController, UITextFieldDelegate {
+class LoginUserView: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     @IBOutlet weak var nameUser: UITextField?
     @IBOutlet weak var buttonOk: UIButton?
@@ -19,14 +19,19 @@ class LoginUserView: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var date: UITextField?
     @IBOutlet weak var name: UITextField?
     @IBOutlet weak var sex: UISegmentedControl!
+    @IBOutlet var imageUser: UIButton!
+    @IBOutlet var labelAdd: UILabel!
+    @IBOutlet var imageReal: UIImageView!
     
     private var datePickerView:UIDatePicker = UIDatePicker()
     private let datiUser = DatiUser()
+    let picker = UIImagePickerController()
     
     var fotoProfilo: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        picker.delegate = self
         // Do any additional setup after loading the view.
         nameUser?.delegate = self
         password?.delegate = self
@@ -42,7 +47,24 @@ class LoginUserView: UIViewController, UITextFieldDelegate {
         
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(MainViewController.keyboardWillHide), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-
+    }
+    
+    
+    @IBAction func photoFromLibrary(_ sender: UIButton)
+    {
+        picker.allowsEditing = false
+        picker.sourceType = .photoLibrary
+        picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
+        present(picker, animated: true, completion: nil)
+    }
+    
+    //MARK: - Delegates
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject])
+    {
+        let chosenImage = info[UIImagePickerControllerOriginalImage] as! UIImage //2
+        imageReal.contentMode = .scaleAspectFit //3
+        imageReal.image = chosenImage //4
+        dismiss(animated:true, completion: nil) //5
     }
     
     
@@ -64,15 +86,6 @@ class LoginUserView: UIViewController, UITextFieldDelegate {
         }
     }
     
-    @IBAction func insertPhoto2(_ sender: Any) {
-        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
-            let imagePicker = UIImagePickerController()
-            imagePicker.sourceType = UIImagePickerControllerSourceType.photoLibrary
-            imagePicker.allowsEditing = true
-            self.present(imagePicker, animated: true, completion: nil)
-        }
-    }
- 
 
     
     
